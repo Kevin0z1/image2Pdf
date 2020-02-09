@@ -111,8 +111,8 @@ public class PhotoToPdf {
     public static void main(String[] args) {
         long time1 = System.currentTimeMillis();
 
-        //修改照片路径以及生成PDF路径
-        toPdf("C:/Users/Admin/Downloads/test/", "C:/Users/Admin/Downloads/test.pdf");
+        //修改照片路径以及生成PDF路径,或修改为相对位置
+        toPdf("src/../testdata/", "src/../test1.pdf");
         long time2 = System.currentTimeMillis();
         int time = (int) ((time2 - time1)/1000);
         System.out.println("执行了："+time+"秒！");
